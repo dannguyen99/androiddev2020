@@ -2,7 +2,6 @@ package com.example.usthweather;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -11,7 +10,14 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.weather_activity);
+        Log.i(tag, "on create");
+
+        // Create a new Fragment to be placed in the activity
+        ForecastFragment forecastFragment = new ForecastFragment();
+
+        // Add the fragment to the 'container' FrameLayout
+        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
     }
 
     @Override
@@ -43,4 +49,5 @@ public class WeatherActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(tag, "on destroy");
     }
+
 }
