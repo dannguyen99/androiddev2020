@@ -28,8 +28,9 @@ public class ForecastFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(0xFF1ed7e8);
+        view.setBackgroundColor(0xFFE0E0FF);
 
+        /*
         //practical work 4 start here
         LinearLayout fragment_container = view.findViewById(R.id.fragment_forecast);
         fragment_container.setOrientation(LinearLayout.VERTICAL);
@@ -46,6 +47,7 @@ public class ForecastFragment extends Fragment {
 
         fragment_container.addView(weather);
         fragment_container.addView(day);
+        */
 
         return view;
     }
