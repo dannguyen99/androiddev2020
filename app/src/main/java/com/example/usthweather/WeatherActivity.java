@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class WeatherActivity extends AppCompatActivity {
     private final String tag = "status";
@@ -13,12 +15,11 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.weather_activity);
         Log.i(tag, "on create");
-
-        // Create a new Fragment to be placed in the activity
-        ForecastFragment forecastFragment = new ForecastFragment();
-//
-//        // Add the fragment to the 'container' FrameLayout
-        getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
+        PagerAdapter adapter = new WeatherAndForecastFragmentPagerAdapter(
+                getSupportFragmentManager());
+        ViewPager pager = findViewById(R.id.pager);
+        pager.setOffscreenPageLimit(3);
+        pager.setAdapter(adapter);
     }
 
     @Override
