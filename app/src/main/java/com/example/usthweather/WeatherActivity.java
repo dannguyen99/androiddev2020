@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WeatherActivity extends AppCompatActivity {
     private final String tag = "status";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,8 +16,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         // Create a new Fragment to be placed in the activity
         ForecastFragment forecastFragment = new ForecastFragment();
-
-        // Add the fragment to the 'container' FrameLayout
+//
+//        // Add the fragment to the 'container' FrameLayout
         getSupportFragmentManager().beginTransaction().add(R.id.container, forecastFragment).commit();
     }
 
