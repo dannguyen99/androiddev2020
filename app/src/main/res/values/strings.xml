@@ -7,6 +7,7 @@
     <string name="Thursday">Thu</string>
     <string name="Friday">Fri</string>
     <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
     <string name="partly_cloudy">Partly Cloudy</string>
     <string name="showers">Showers</string>
     <string name="rain">Rain</string>

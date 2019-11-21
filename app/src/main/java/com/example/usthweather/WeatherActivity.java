@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class WeatherActivity extends AppCompatActivity {
     private final String tag = "status";
 
@@ -20,6 +22,8 @@ public class WeatherActivity extends AppCompatActivity {
         ViewPager pager = findViewById(R.id.pager);
         pager.setOffscreenPageLimit(3);
         pager.setAdapter(adapter);
+        TabLayout tabLayout = findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
     }
 
     @Override
