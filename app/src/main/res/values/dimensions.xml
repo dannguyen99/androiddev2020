@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">15dp</dimen>
+    <dimen name="tablayout_height">40dp</dimen>
+    <dimen name="temperature_textSize">25sp</dimen>
+    <dimen name="city_textSize">20sp</dimen>
+    <dimen name="row_height">50dp</dimen>
+    <dimen name="textview_day_width">70dp</dimen>
+    <dimen name="textview_day_txtsize">15sp</dimen>
+    <dimen name="imageview_weather_width">80dp</dimen>
+    <dimen name="imageview_weather_height">30dp</dimen>
+    <dimen name="textview_weather_height">25dp</dimen>
+</resources>

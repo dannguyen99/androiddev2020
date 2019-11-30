@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="15dp"
-    android:paddingRight="15dp"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
     tools:context=".WeatherActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="@dimen/tablayout_height" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"

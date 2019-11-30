@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/temperature"
-        android:textSize="25sp" />
+        android:textSize="@dimen/temperature_textSize" />
 
     <TextView
         android:id="@+id/textWeather"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textTemp"
         android:text="@string/sunny"
-        android:textSize="25sp" />
+        android:textSize="@dimen/temperature_textSize" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:text="@string/paris"
-        android:textSize="20sp" />
+        android:textSize="@dimen/city_textSize" />
 
     <ImageView
         android:id="@+id/imageView"
