@@ -1,5 +1,6 @@
 package com.example.usthweather;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -11,6 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     private final String tag = "status";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.i(tag, "on resume");
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.song);
+        mediaPlayer.start();
     }
 
     @Override
@@ -55,5 +59,4 @@ public class WeatherActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(tag, "on destroy");
     }
-
 }
