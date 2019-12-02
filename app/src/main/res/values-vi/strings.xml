@@ -8,7 +8,7 @@
     <string name="Thursday">Thứ năm</string>
     <string name="Tuesday">Thứ bar</string>
     <string name="Wednesday">Thứ tư</string>
-    <string name="hello_blank_fragment">đây là blank fragment</string>
+    <string name="refresh_message">Cái nút này chả để làm gì</string>
     <string name="mostly_cloudy">Nhiều mây</string>
     <string name="paris">Paris</string>
     <string name="partly_cloudy">Ít mây</string>
@@ -18,4 +18,5 @@
     <string name="sunny">Nắng cực</string>
     <string name="temperature">24C -31C</string>
     <string name="thunderstorms">Bão sấm</string>
+    <string name="refresh">Làm tươi</string>
 </resources>
